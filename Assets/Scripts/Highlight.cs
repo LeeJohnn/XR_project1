@@ -13,10 +13,6 @@ public class Highlight : MonoBehaviour
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
-        //bound = new Bounds();
-        
-        
-        
     }
     // Start is called before the first frame update
     void Start()
@@ -42,8 +38,6 @@ public class Highlight : MonoBehaviour
                     e.target.transform.parent.GetChild(i).GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
             }
         }
-
-        
     }
 
     public void PointerOutside(object sender, PointerEventArgs e)
